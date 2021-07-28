@@ -9,6 +9,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/', apis);
 
+app.get('/', (req, res) => {
+  res.send("hello");
+})
+
 app.listen(process.env.PORT || 3000, ()=> {
   console.log("app running");
 })
