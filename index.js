@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/', apis);
 
-app.listen(3099 || process.env.PORT, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
   console.log("app running");
 })
 
